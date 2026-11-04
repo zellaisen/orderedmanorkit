@@ -1,0 +1,12 @@
+name: Main Build
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  process-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: echo "workspace ready"
